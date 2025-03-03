@@ -1,0 +1,1 @@
+Dashboard showing insuranced denial rates and reasons fors denials. Data gathered from https://www.cms.gov/marketplace/resources/data/public-use-files and https://hbex.coveredca.com/insurance-companies/denied-claims/
