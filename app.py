@@ -151,6 +151,7 @@ def treemap_plot(state):
     return fig
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server=app.server
 app.layout = dbc.Container([
     dbc.Card([
             dbc.Button('🡠',
