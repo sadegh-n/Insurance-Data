@@ -78,6 +78,7 @@ def choropleth_plot():
       xanchor="right", yanchor="bottom")
     fig.add_annotation(
       text="This is an interactive map. <br> Click and drag cursor to move the map around. <br> Use the mouse wheel to zoom in/out. <br> Click on a colored state to details about reasons for denial.",
+      xref="paper", yref="paper",
       x=1.25, y=-0.2,
       showarrow=False)
     fig.update_layout(title = {'x': 0.25, 'y': 0.95},
@@ -153,6 +154,7 @@ def treemap_plot(state):
         xanchor="right", yanchor="bottom" )
     fig.add_annotation(
     text = "Click on a box to expand it for easier reading. <br> Click on the box again to return it to the normal size. <br> Use the back arrow on the top left to return to the map plot.",
+    xref="paper", yref="paper",
     x=1, y=1.3,
     showarrow=False,
     xanchor="right", yanchor="top")
