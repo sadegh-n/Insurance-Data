@@ -79,7 +79,7 @@ def choropleth_plot():
     fig.add_annotation(
       text="This is an interactive map. <br> Click and drag cursor to move the map around. <br> Use the mouse wheel to zoom in/out. <br> Click on a colored state to details about reasons for denial.",
       xref="paper", yref="paper",
-      x=1.1, y=-0.2,
+      x=1.17, y=-0.2,
       showarrow=False)
     fig.update_layout(title = {'x': 0.25, 'y': 0.95},
                       margin = dict(t=50, r=25, l=25),
