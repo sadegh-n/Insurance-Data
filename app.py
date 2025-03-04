@@ -73,11 +73,11 @@ def choropleth_plot():
       https://www.cms.gov/marketplace/resources/data/public-use-files <br> Data for California from: Covered California, \"Data on Denied Claims\", 2023, <br>\
         https://hbex.coveredca.com/insurance-companies/denied-claims/",
       xref="paper", yref="paper",
-      x=0.85, y=-0.2,
+      x=0.65, y=-0.2,
       showarrow=False,
       xanchor="right", yanchor="bottom")
     fig.add_annotation(
-      text="This is an interactive map. <br> Click and drag cursor to move the map around. <br> Use the mouse wheel to zoom in/out. <br> Click on a colored state to details about reasons for denial.",
+      text="<b> This is an interactive map. <br> Click and drag cursor to move the map around. <br> Use the mouse wheel to zoom in/out. <br> Click on a colored state for details about reasons for denial.</b>",
       xref="paper", yref="paper",
       x=1.17, y=-0.2,
       showarrow=False)
