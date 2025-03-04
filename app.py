@@ -73,7 +73,7 @@ def choropleth_plot():
       https://www.cms.gov/marketplace/resources/data/public-use-files <br> Data for California from: Covered California, \"Data on Denied Claims\", 2023, <br>\
         https://hbex.coveredca.com/insurance-companies/denied-claims/",
       xref="paper", yref="paper",
-      x=0.70, y=-0.2,
+      x=0.75, y=-0.2,
       showarrow=False,
       xanchor="right", yanchor="bottom")
     fig.add_annotation(
