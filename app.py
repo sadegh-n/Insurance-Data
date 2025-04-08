@@ -68,19 +68,8 @@ def choropleth_plot():
                     color_continuous_scale="Viridis",
                     scope="usa",
                     title='Denial Rate of Claims Per State (2023)')
-    fig.add_annotation(
-      text="Centers for Medicare & Medicaid Services,  \"Transparency in Coverage PUF (TC-PUF)\", 2023, <br> \
-      https://www.cms.gov/marketplace/resources/data/public-use-files <br> Data for California from: Covered California, \"Data on Denied Claims\", 2023, <br>\
-        https://hbex.coveredca.com/insurance-companies/denied-claims/",
-      xref="paper", yref="paper",
-      x=0.75, y=-0.2,
-      showarrow=False,
-      xanchor="right", yanchor="bottom")
-    fig.add_annotation(
-      text="<b> This is an interactive map. <br> Click and drag cursor to move the map around. <br> Use the mouse wheel to zoom in/out. <br> Click on a colored state for details about reasons for denial.</b>",
-      xref="paper", yref="paper",
-      x=1.17, y=-0.2,
-      showarrow=False)
+    
+    
     fig.update_layout(title = {'x': 0.25, 'y': 0.95},
                       margin = dict(t=50, r=25, l=25),
                       paper_bgcolor="#ededed",
@@ -136,28 +125,7 @@ def treemap_plot(state):
       showarrow=False)
     fig.update_layout(uniformtext=dict(minsize=15, mode='hide'),)
     fig.update(layout_coloraxis_showscale=False)
-    if state == 'CA':
-        fig.add_annotation(
-        text="Covered California, \"Data on Denied Claims\", 2023, <br>\
-        https://hbex.coveredca.com/insurance-companies/denied-claims/",
-        xref="paper", yref="paper",
-        x=0.75, y=-0.2,
-        showarrow=False,
-        xanchor="right", yanchor="bottom" )
-    else:
-        fig.add_annotation(
-        text="Centers for Medicare & Medicaid Services, \"Transparency in Coverage PUF (TC-PUF)\", 2023, <br>\
-        https://www.cms.gov/marketplace/resources/data/public-use-files",
-        xref="paper", yref="paper",
-        x=0.75, y=-0.2,
-        showarrow=False,
-        xanchor="right", yanchor="bottom" )
-    fig.add_annotation(
-    text = "Click on a box to expand it for easier reading. <br> Click on the box again to return it to the normal size. <br> Use the back arrow on the top left to return to the map plot.",
-    xref="paper", yref="paper",
-    x=1, y=1.3,
-    showarrow=False,
-    xanchor="right", yanchor="top")
+    
     fig.update_traces(hovertemplate='labels=%{label}<br>value=%{value}<extra></extra>')
     return fig
 
